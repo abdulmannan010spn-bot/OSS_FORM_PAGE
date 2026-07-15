@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #d8d9db;
+  background-image:
+    linear-gradient(#bcbcbc 1px, transparent 1px),
+    linear-gradient(90deg, #bcbcbc 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ================= WINDOW ================= */
+
+.window {
+  width: 100%;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f7;
+  border: 1px solid #bcbcbc;
+  box-shadow: 10px 10px 0 #0b436b;
+  overflow: hidden;
+}
+
+/* ================= TITLEBAR ================= */
+
+.titlebar {
+  height: 42px;
+  background: #03518a;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dots span:nth-child(1) {
+  background: #ff5f57;
+}
+
+.dots span:nth-child(2) {
+  background: #febc2e;
+}
+
+.dots span:nth-child(3) {
+  background: #28c840;
+}
+
+.oss {
+  margin-left: auto;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sideBAR {
+  width: 220px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.intbox {
+  padding: 24px;
+  border: 1px solid #bbb;
+}
+
+.int26 {
+  color: #03518a;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  margin-top: 10px;
+  background: #d9480f;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 20px;
+  color: #666;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  color: #03518a;
+}
+
+nav a.active {
+  color: #03518a;
+  font-weight: 600;
+}
+
+.status {
+  margin-top: auto;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.7;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+  flex: 1;
+  padding: 35px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #222;
+}
+
+.path {
+  margin: 28px 0;
+  padding-bottom: 18px;
+  color: #777;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.6;
+}
+
+/* ================= FORM ================= */
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  color: #03518a;
+  font-size: 14px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.details {
+  color: #39d97f;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+input,
+select {
+  flex: 1;
+  height: 42px;
+  padding: 0 14px;
+  font-family: inherit;
+  border: 1px solid #aaa;
+  background: white;
+  outline: none;
+  transition: 0.25s;
+}
+
+input:focus,
+select:focus {
+  border-color: #03518a;
+  box-shadow: 0 0 0 3px rgba(3, 81, 138, 0.15);
+}
+
+/* ================= BUTTON ================= */
+
+button {
+  align-self: flex-end;
+  margin-top: 20px;
+  padding: 15px 28px;
+  font-family: inherit;
+  font-size: 16px;
+  color: white;
+  background: #03518a;
+  border: none;
+  box-shadow: 5px 5px 0 #0b436b;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #0b436b;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+  border-top: 1px solid #bcbcbc;
+  background: #f2f2f2;
+}
+
+.osslgo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #666;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.links a:hover {
+  color: #03518a;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* Extra Small Mobile (Portrait specifically) */
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 20px;
+  }
+  .int26 {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (All orientations up to Tablets) */
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 15px;
+  }
+
+  .window {
+    min-height: auto;
+  }
+
+  /* Stack the layout */
+  .content {
+    flex-direction: column;
+  }
+
+  .sideBAR {
+    width: 100%;
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  /* Make nav horizontal for mobile */
+  nav {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-bottom: 0;
+  }
+
+  .status {
+    display: none; /* Hides the bottom text chunk on mobile to save space */
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  /* Stack inputs */
+  .input-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+
+  .details {
+    display: none; /* Hides decorative text that breaks input stacking */
+  }
+
+  button {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  /* Stack footer items */
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 25px 20px;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 20px;
+  }
+
+  /* Shrink sidebar slightly */
+  .sideBAR {
+    width: 180px;
+    min-width: 180px;
+    padding: 25px 15px;
+  }
+
+  .main {
+    padding: 25px;
+  }
+
+  .input-box {
+    gap: 10px;
+  }
+}
+
+/* Desktops and Laptops */
+@media only screen and (min-width: 1025px) {
+  .window {
+    max-width: 1200px; /* Prevents it from stretching endlessly */
+    margin: 0 auto;
+  }
+}
+
+/* Very Large Screens */
+@media only screen and (min-width: 1824px) {
+  html {
+    font-size: 18px; /* Scales up typography natively */
+  }
+
+  .window {
+    max-width: 1400px;
+  }
+}
