@@ -25,7 +25,8 @@ body {
   background-size: 40px 40px;
 }
 
-/* ================= WINDOW ================= */
+
+
 
 .window {
   width: 100%;
@@ -38,7 +39,7 @@ body {
   overflow: hidden;
 }
 
-/* ================= TITLEBAR ================= */
+
 
 .titlebar {
   height: 42px;
@@ -78,14 +79,12 @@ body {
   font-size: 14px;
 }
 
-/* ================= CONTENT ================= */
 
 .content {
   flex: 1;
   display: flex;
 }
 
-/* ================= SIDEBAR ================= */
 
 .sideBAR {
   width: 220px;
@@ -142,7 +141,7 @@ nav a.active {
   line-height: 1.7;
 }
 
-/* ================= MAIN ================= */
+
 
 .main {
   flex: 1;
@@ -164,7 +163,7 @@ nav a.active {
   line-height: 1.6;
 }
 
-/* ================= FORM ================= */
+
 
 .user-details {
   display: flex;
@@ -207,7 +206,7 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(3, 81, 138, 0.15);
 }
 
-/* ================= BUTTON ================= */
+
 
 button {
   align-self: flex-end;
@@ -233,7 +232,7 @@ button:active {
   box-shadow: none;
 }
 
-/* ================= FOOTER ================= */
+
 
 footer {
   width: 100%;
@@ -268,9 +267,9 @@ footer {
   color: #03518a;
 }
 
-/* ================= RESPONSIVE MEDIA QUERIES ================= */
+/*RESPONSIVE*/
 
-/* Extra Small Mobile (Portrait specifically) */
+/* Extra Small Mobile*/
 @media only screen and (max-width: 320px) {
   .title {
     font-size: 20px;
@@ -280,7 +279,7 @@ footer {
   }
 }
 
-/* Mobile (All orientations up to Tablets) */
+/* Mobile*/
 @media only screen and (max-width: 767px) {
   body {
     padding: 15px;
