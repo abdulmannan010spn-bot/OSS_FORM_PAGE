@@ -302,7 +302,7 @@ footer {
     padding: 20px;
   }
 
-  /* Make nav horizontal for mobile */
+
   nav {
     margin-top: 25px;
     display: flex;
@@ -315,14 +315,14 @@ footer {
   }
 
   .status {
-    display: none; /* Hides the bottom text chunk on mobile to save space */
+    display: none; 
   }
 
   .main {
     padding: 20px;
   }
 
-  /* Stack inputs */
+
   .input-box {
     flex-direction: column;
     align-items: flex-start;
@@ -335,7 +335,7 @@ footer {
   }
 
   .details {
-    display: none; /* Hides decorative text that breaks input stacking */
+    display: none; 
   }
 
   button {
@@ -343,7 +343,7 @@ footer {
     align-self: stretch;
   }
 
-  /* Stack footer items */
+  
   footer {
     flex-direction: column;
     justify-content: center;
@@ -363,7 +363,7 @@ footer {
     padding: 20px;
   }
 
-  /* Shrink sidebar slightly */
+
   .sideBAR {
     width: 180px;
     min-width: 180px;
@@ -382,7 +382,7 @@ footer {
 /* Desktops and Laptops */
 @media only screen and (min-width: 1025px) {
   .window {
-    max-width: 1200px; /* Prevents it from stretching endlessly */
+    max-width: 1200px; 
     margin: 0 auto;
   }
 }
@@ -390,7 +390,7 @@ footer {
 /* Very Large Screens */
 @media only screen and (min-width: 1824px) {
   html {
-    font-size: 18px; /* Scales up typography natively */
+    font-size: 18px; 
   }
 
   .window {
